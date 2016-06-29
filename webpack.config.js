@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './src/index.js'
+    './src_redux_example/index.js'
   ],
   output: {
     path: __dirname,
