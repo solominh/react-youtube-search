@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class BookDetail extends Component {
 
@@ -21,7 +21,10 @@ class BookDetail extends Component {
     }
 }
 
+// state is application state
+// state is rootReduce in ./reducers/index.js
 function mapStateToProps(state) {
+    console.log('BookDetail', 'mapStateToProps', state);
     return {
         book: state.activeBook,
     }
